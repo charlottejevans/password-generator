@@ -58,4 +58,10 @@ function copyPassword(){
     alert('Password copied to clipboard!');
 }
 
+function copyUserName(){
+    userNameBox.select();
+    document.execCommand('copy');
+    alert('Password copied to clipboard!');
+}
+
 console.log(checkBox.checked)
