@@ -1,10 +1,16 @@
 const passwordBox = document.getElementById('password');
+const userNameBox = document.getElementById('username');
 const checkBox = document.getElementById('checkBox');
 const length = 12; // Adding a default length of 12 for each password generated.
 const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '0123456789';
 const specialCharacters = '!@#$%^&*^()_+~`|}{[];?><,./-=';
+
+function createUserName() {
+    let userName = '';
+
+}
 
 function createPassword() {
     if (!checkBox.checked) {
