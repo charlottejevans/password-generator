@@ -54,6 +54,7 @@ body {
 .container button img{
     width: 28px;
     margin-right: 10px;
+    transition: transform 0.3s ease;
 }
 
 .container button{
@@ -69,8 +70,18 @@ body {
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .checkBox{
     margin-top: 20px;
+}
+
+.container button:hover img {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+
+.container button:hover {
+    transform: scale(1.05);
 }
