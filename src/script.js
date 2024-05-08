@@ -20,3 +20,10 @@ function createPassword() {
  // Displays password input in the password box.
     passwordBox.value = password;
 }
+
+
+function copyPassword(){
+    passwordBox.select();
+    document.execCommand('copy');
+    alert('Password copied to clipboard!');
+}
