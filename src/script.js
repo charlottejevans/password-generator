@@ -6,10 +6,18 @@ const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '0123456789';
 const specialCharacters = '!@#$%^&*^()_+~`|}{[];?><,./-=';
+const names = ['Alice', 'Bob', 'Charlotte', 'Daniel', 'Eve', 'Frank', 'Grace', 'Henry', 'Ivona', 'Jessica', 'Kevin', 'Linda', 'Martin', 'Nancy', 'Oliver', 'Pamela', 'Quincy', 'Rachel', 'Steven', 'Tina', 'Ursula', 'Victor', 'Wendy', 'Xavier', 'Yvonne', 'Zachary'];
+
+
+function getRandomName(namesArray) {
+    const randomIndex = Math.floor(Math.random() * namesArray.length);
+    return namesArray[randomIndex];
+}
 
 function createUserName() {
-    let userName = '';
-
+    const randomName = getRandomName(names);
+    userNameBox.value = randomName;
+    console.log(randomName);
 }
 
 function createPassword() {
