@@ -70,3 +70,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.checkBox{
+    margin-top: 20px;
+}
